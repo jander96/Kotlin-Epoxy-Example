@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Epoxy Kotlin Example</string>
+    <string name="nachosDesc">Nacos DEsc</string>
+</resources>
