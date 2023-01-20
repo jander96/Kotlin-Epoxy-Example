@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">Epoxy Kotlin Example</string>
     <string name="nachosDesc">Nacos DEsc</string>
+    <string name="bob_sponge_description">Bob Esponja Pantalones Cuadrados es el personaje principal de la serie. Es un agradable y optimista esponja de mar que trabaja en el Crustáceo Crujiente, asiste a la escuela náutica, y se junta con su amigo Patrick, o pasa tiempo con Arenita, una ardilla.</string>
+    <string name="patrick_description">Patricio Estrella (en inglés: Patrick Star) es un personaje de la serie animada Bob Esponja, del canal Nickelodeon. Es una estrella de mar de color rosa, el mejor amigo de Bob Esponja. Usa un bañador verde con dibujos de flores púrpura y no usa camisa, aunque usa un traje marrón en sus momentos especiales </string>
+    <string name="cangrejo_description">Eugene Harold Cangrejo, conocido como Don Cangrejo en Hispanoamérica y como Sr. Cangrejo en España, es un personaje ficticio de la serie de televisión en dibujos animados Bob Esponja (SpongeBob SquarePants en inglés).Es cangrejo de color rojo, propietario y fundador del Crustáceo Crujiente y creador de la Burguer Cangreburger, muy habilidoso y en muchas ocasiones jefe explotador, a pesar de esto, ama a sus dos empleados, Bob Esponja y Calamardo. Es el archienemigo de Plackton y le gusta el dinero.</string>
+    <string name="arenita_description">Arenita Mejillas (Sandra "Sandy" Cheeks en inglés) es un personaje de la serie Bob Esponja transmitida por Nickelodeon y creada por Stephen Hillenburg. Su nombre real es Sandra, aunque es llamada Sandy por sus amigos (traducido al español como Arenita). Es una ardilla originaria de Texas</string>
+
 </resources>
