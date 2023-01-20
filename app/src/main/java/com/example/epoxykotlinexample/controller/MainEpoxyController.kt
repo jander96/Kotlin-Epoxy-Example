@@ -10,12 +10,14 @@ import com.example.epoxykotlinexample.models.HeadModel
 class MainEpoxyController(
     private val onClickCallBack: (String)->Unit
 ): EpoxyController(){
+    // list of personage
     var personages: List<Personage> = emptyList()
      set(value) {
          field = value
          requestModelBuild()
      }
     override fun buildModels() {
+        // Header
         HeadModel()
             .id("head")
             .addTo(this)
@@ -25,12 +27,14 @@ class MainEpoxyController(
                .addTo(this)
 
        }
+        // Descriptions
         personages.forEach {personage ->
             DescriptionModel(personage){
                 onClickCallBack(personage.name)
             }.id("desc")
                 .addTo(this)
         }
+        // Bottom
         BottomModel()
             .id("fin")
             .addTo(this)

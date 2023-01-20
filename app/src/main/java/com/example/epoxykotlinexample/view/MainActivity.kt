@@ -26,16 +26,18 @@ class MainActivity : AppCompatActivity() {
         mainEpoxyController = MainEpoxyController {
             doSomething(it)
         }
+        // setting controller
         with(mainEpoxyController){
-            personages = DataSources(this@MainActivity).listOfPersonages
+            personages = DataSources(this@MainActivity).listOfPersonages// pass personages list
         }
+        // setting EpoxyRecyclerView
         with(binding.recyclerView){
             this.setController(mainEpoxyController)
                 this.layoutManager =
                 LinearLayoutManager(this@MainActivity, LinearLayoutManager.VERTICAL, false)
         }
 
-
+        // setting swipe recycler`s function
         EpoxyTouchHelper.initSwiping(binding.recyclerView)
             .right()
             .withTarget(DescriptionModel::class.java)
@@ -46,6 +48,7 @@ class MainActivity : AppCompatActivity() {
                     position: Int,
                     direction: Int
                 ) {
+                    // Any other function like delete from database or add to favorite
                     Snackbar.make(binding.root, "Any Function", Snackbar.LENGTH_SHORT).apply {
                         this.setAction("undo action") {
 
@@ -59,8 +62,8 @@ class MainActivity : AppCompatActivity() {
             })
 
     }
-
-    private fun doSomething(title: String) {
+        // any function for epoxyController Callback
+        private fun doSomething(title: String) {
         Snackbar.make(binding.root, "Se oprimio el title $title", Snackbar.LENGTH_SHORT)
             .show()
     }

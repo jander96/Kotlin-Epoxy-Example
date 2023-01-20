@@ -1,5 +1,6 @@
 package com.example.epoxykotlinexample.view
-
+/* Recycler Adapter para el linear horizontal
+* de imagenes de los personajes  */
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
